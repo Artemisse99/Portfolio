@@ -1,4 +1,3 @@
-
 const projectLinks = [
     "https://www.jaclinicalresearch.com/",
     "https://www.energymedicalcenters.com/",
@@ -25,6 +24,11 @@ projectLinks.forEach(link => {
     const card = document.createElement("div");
     card.className = "project-card";
     const title = link.replace(/https?:\/\//, "").replace("www.", "").split(".")[0];
-    card.innerHTML = `<h3>${title}</h3><a href="${link}" target="_blank">Visitar sitio</a>`;
+    card.innerHTML = `
+        <h3><i class="fa-solid fa-globe"></i> ${title}</h3>
+        <a href="${link}" target="_blank">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visitar sitio
+        </a>
+    `;
     container.appendChild(card);
 });
