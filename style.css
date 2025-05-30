@@ -128,21 +128,21 @@ footer {
   margin-bottom: 2rem;
 }
 
-.services-list {
-  list-style: none;
-  padding: 0;
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 }
 
-.services-list li {
+.service-card {
   background-color: #111;
   border: 1px solid rgb(38, 28, 20);
   border-radius: 8px;
   padding: 1.2rem;
-  margin-bottom: 1rem;
   color: rgb(200, 213, 205);
 }
 
-.services-list h3 {
+.service-card h3 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
   display: flex;
@@ -150,8 +150,22 @@ footer {
   gap: 0.5rem;
 }
 
-.services-list i {
-  color: rgb(243, 207, 63); /* Puedes cambiar este color al que estés usando actualmente */
+.service-card i {
+  color: #f3cf3f; /* o el color que estás usando como principal */
   font-size: 1.3rem;
 }
+
+/* Responsive: se adapta a pantallas más pequeñas */
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
