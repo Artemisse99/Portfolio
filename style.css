@@ -1,63 +1,80 @@
-
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background-color: rgb(3, 7, 17);
-    color: rgb(165, 165, 186);
+    background-color: #0e1117;
+    color: #e6edf3;
     line-height: 1.6;
 }
+
 header, section, footer {
     padding: 2rem;
     max-width: 960px;
     margin: auto;
 }
+
 h1, h2 {
-    color: rgb(200, 213, 205);
+    color: #58a6ff;
 }
+
 a {
-    color: rgb(243, 207, 63);
+    color: #facc15;
     text-decoration: none;
 }
+
+a:hover {
+    text-decoration: underline;
+}
+
 .btn {
-    background-color: rgb(243, 207, 63);
-    color: rgb(3, 7, 17);
+    background-color: #facc15;
+    color: #0e1117;
     padding: 0.5rem 1rem;
     display: inline-block;
     margin-top: 1rem;
     border-radius: 30px;
     font-weight: bold;
+    transition: background-color 0.3s ease;
 }
+
+.btn:hover {
+    background-color: #eab308;
+}
+
 .skills ul li {
-    background-color: rgb(160, 78, 6);
+    background-color: #2563eb;
     color: white;
     padding: 0.4rem 0.7rem;
     display: inline-block;
     margin: 0.2rem;
     border-radius: 5px;
 }
+
 .highlights li {
-    background-color: rgb(38, 28, 20);
+    background-color: #1f2937;
     padding: 0.4rem;
     display: inline-block;
     margin: 0.3rem;
     color: white;
     border-radius: 4px;
 }
+
 .projects .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
     margin-top: 1rem;
 }
+
 .project-card {
-    border: 1px solid rgb(38, 28, 20);
+    border: 1px solid #1f2937;
     padding: 1rem;
     border-radius: 5px;
-    background-color: #111;
+    background-color: #111827;
 }
+
 footer {
     text-align: center;
     padding: 2rem;
     font-size: 0.9rem;
-    color: rgb(165, 165, 186);
+    color: #9ca3af;
 }
