@@ -25,9 +25,9 @@ projectLinks.forEach(link => {
     card.className = "project-card";
     const title = link.replace(/https?:\/\//, "").replace("www.", "").split(".")[0];
     card.innerHTML = `
-        <h3><i class="fa-solid fa-globe"></i> ${title}</h3>
+        <h3><i class="bi bi-globe-americas"></i> ${title}</h3>
         <a href="${link}" target="_blank">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Visitar sitio
+            <i class="bi bi-link-45deg"></i>Visitar sitio
         </a>
     `;
     container.appendChild(card);
