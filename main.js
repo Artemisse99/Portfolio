@@ -20,10 +20,23 @@ const projectLinks = [
 ];
 
 const container = document.querySelector(".projects .grid");
+
+// Función para convertir a Capital Case
+function toTitleCase(str) {
+    return str
+        .split(/[-_ ]+/) // dividir por guiones, guiones bajos o espacios
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
+}
+
 projectLinks.forEach(link => {
     const card = document.createElement("div");
     card.className = "project-card";
-    const title = link.replace(/https?:\/\//, "").replace("www.", "").split(".")[0];
+
+    // Obtener nombre del dominio sin 'www.' ni TLD y convertir a Capital Case
+    const rawTitle = link.replace(/https?:\/\//, "").replace("www.", "").split(".")[0];
+    const title = toTitleCase(rawTitle);
+
     card.innerHTML = `
         <h3><i class="bi bi-globe-americas"></i> ${title}</h3>
         <a href="${link}" target="_blank">
