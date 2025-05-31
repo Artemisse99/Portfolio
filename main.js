@@ -27,7 +27,7 @@ projectLinks.forEach(link => {
     card.innerHTML = `
         <h3><i class="bi bi-globe-americas"></i> ${title}</h3>
         <a href="${link}" target="_blank">
-            <i class="bi bi-link-45deg"></i>Visitar sitio
+            <i class="bi bi-link-45deg"></i> Visitar sitio web
         </a>
     `;
     container.appendChild(card);
